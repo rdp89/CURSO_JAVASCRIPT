@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Etiquetas básicas
+		</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/css2.css">
+		<style>
+			p, h2, h5{
+				/*Esto pone de color rojo el texto*/
+				color: blue;
+				/*Alinea 
+				el texto 
+				de
+				forma 
+				centrada*/
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1" title="Texto en latín">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas labore minima placeat, sapiente? Voluptate adipisci temporibus autem doloremque est deserunt, tempore illo modi harum pariatur veritatis explicabo voluptatum cum. Sed.
+		</p>
+		<button type="button" onclick="document.getElementById('p1').innerHTML = 'Hola JavaScript!'">Decir hola</button>
+		<button type="button" onclick="document.getElementById('p1').style.color = 'green'">Cambiar a verde</button><br><br>
+		<button type="button" onclick="document.getElementById('bombilla').src = '../img/apagado.gif'">Apagar</button>
+		<img id="bombilla" src="../img/apagado.gif">
+		<button type="button" onclick="document.getElementById('bombilla').src = '../img/encendido.gif'">Encender</button>
+
+	</body>
+</html>
